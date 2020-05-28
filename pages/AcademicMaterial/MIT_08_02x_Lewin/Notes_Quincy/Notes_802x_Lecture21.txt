@@ -1,0 +1,34 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+3/24/20
+Lecture 21
+[Magnetism: Diamagnetism, Paramagnetism, Ferromagnetism]
+-------------------------------------------------------------------------
+Magnetic Dipole Moment: mu = IA
+
+Diamagnetism:
+All materials, when exposed to external magnetic field will to some degree oppose magnetic field. They will generate an EMF at the atomic level (note NOT Lenz's Law). Need quantum to really understand this concept.
+
+Paramagnetism:
+Materials with magnetic dipoles but no net magnetic field and thus not a permanent magnet. These dipoles align in the presence of an external magnetic field.
+
+Ferromagnetism:
+Atoms in material have permanent dipole moments lumped together in groups called domains. All dipoles in a domain are uniformly aligned but neighboring domains may point in different directions.
+
+Parameters determining magnetism:
+Km < 1     Diamagnetic
+Km > 1     Paramagnetic
+Km ~= Xm     Ferromagnetic
+
+Here, B = Km Bvac  where
+B is the field inside the material,
+Km is the relative permeability,
+Bvac is the external vacuum field
+
+Paramagnets have low attractive force
+Ferromagnets have high attractive force
+
+Demo: Iron washer on pendulum wire is attracted to magnet (ferromagetism) but loses this attraction at high heat (paramagnetism).

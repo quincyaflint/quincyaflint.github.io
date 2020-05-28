@@ -1,0 +1,21 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+1/5/2018
+Lecture 5 - Saturn Brooch
+[E=-GradV, Conductors, Electrostatic Shielding] 
+-------------------------------------------------------------------------
+- Any hollow conductor will have zero electric field inside cavity. Consequence of Gauss's Law, just draw Gaussian surface, LoopInt(E.dl)=0
+- Charges move freely in conductors (by definition)
+
+DEMO: Show no charge inside hollow conductor. Charges metal lid by first charging insulating glass plate by rubbing with cat fur (+charged) and touching the two. Then charges paint can (-charged) and repeats. Takes test sphere and touches OUTSIDE of paint can, meaures significant charge with elestroscope. Now touches INSIDE of paint can and measures nothing with the electroscope.
+
+- Touch on polarization of hollow conducting box in static E-field due to external positive and negative point charges. Electrostatic shielding (Faraday cage).
+
+- What if we place a +charge inside a hollow conducting sphere? By Gauss's Law -charge gathers on inside (depending on where point charge is located. If closer to one wall then non-uniformly distributed on inside surface) of conductor to cancel +charge LoopInt(E.dA)=q/eps0. +Charge gathers uniformly on outside surface of sphere unaware of charges inside conductor.
+
+DEMO: Place hollow conducting can in static electric field of Van de Graaff generator. -charge on 1 side of can +charge on the other, no charge inside.
+
+DEMO: Lewin Goes in Faraday cage with radio and tinsel, turns on Van de Graaf generator to show effect of electrostatic shielding.

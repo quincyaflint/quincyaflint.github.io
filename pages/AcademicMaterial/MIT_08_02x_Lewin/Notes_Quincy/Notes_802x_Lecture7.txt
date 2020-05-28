@@ -1,0 +1,32 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+1/21/18, 2/27/18
+Lecture 7 - Butterfly brooch
+[Capacitance, Electric Field Energy]
+-------------------------------------------------------------------------
+- Work done to assemble charges is called electrostatic potential energy.
+
+- Given 2 parallel plates of opposite charges, Q=+-Sig*A, seperated by distance h, then electric field between them is E=Sig/e0. Now if we move top plate up distance x -- we must apply force and work is done. As plate moves up, an electric field is created that wasn't there before. Electric field is same as below because charge on pates is the same. Work done to move plate up a distance x is W=F*x where the force done is F=1/2*qE. (Note here force is not qE because when we zoom into plate, the charge is found only along the surface so F=qE on one side of plate, in capacitor, but inside the conductor, the E-field is zero --> so we simple average to get force AT charge layer, so F=qE/2). Now we can calculate the work to move plate up. W=1/2*qEx, note q=Sig*A and E=Sig/e0 so W=1/2*Sig*A*E*x and multiplying by e0/e0 we get total work done is W=1/2*e0*E^2*A*x. Recall, A*x is new volume created. Work done per unit volume is W/Vol=1/2*e0*E^2 and is called the field energy density (J/m^3). Now we can calculate electrostatic potential energy as the intergral of the field energy density U=INT(1/2*e0*E^2)dV. Energy is stored in the electric field? Work is done to create electric fields.
+
+- Now, to calculate electrostatic potential energy we can either find work done to move charges into place or can integrate electric field over all space [U=INT(1/2*e0*E^2)dv].
+
+- Energy in field is U=INT(1/2*e0*E^2)dv, note that Q=A*Sig, V=E*h, E=Sig/e0 then integrating over all space (really just inside capacitor because E=0 outside) we see that U=1/2*Q*V. This is the work done to "create" electric fields.
+
+- Capacitance is a measure of ability to store charge for given electric potential, C=Q/V (Farad). However, capacitance is never a function of charge, only geometry!
+
+- Consider sphere of radius r with charge Q on conductor then potential is V=Q/(4*pi*e0*R) by definition. So capacitance of sphere is 4*pi*e0*R.
+
+- Consider 2 spheres near (or plates), again, the capacitance is charge over potential difference. C=Q/V=Sig*A/E*d=A*Eps/d. The capacitance is linearly proportional to the area of the plates and inversely proportional to the distance between them. The closer the plates, the higher the capacitance. The larger the plate size, the higher the capacitance.
+
+- Two parallel plates of size 25m by 50m are seperated by a distance .01m. The capacitance is about 1 micro-Farad. How do capacitors achieve such high capactiance in small area? Electrolytic capcitors are wrapped up aluminum sheets seperated by an insulating material!
+
+- How much energy is stored in the capacitor? From above, we have, U=Q*V/2 so U=C*V^2/2.
+
+- DEMO: Charged 2 metal plate space 1mm apart. Slowly moved plates away, total charge stays the same but the electric field increases.
+
+- DEMO: Fuse example. Large capacitor of 100 uF charged with 3000V power supply then we have 0.3 C charge on capacitor. Then the energy stored is U=1/2CV^2 = 450J (This takes 15 minutes). The capacitor is discharged across a wire, it is loud and a light is emitted.
+
+- Example: Camera flash has a capacitor of 5,000 uF and we can charge to a potential difference of 100 V (with 6V batteries) meaning we can store U=1/2CV^2 = 25J. When the switch is thrown, the capacitor is discharged through the flash light.

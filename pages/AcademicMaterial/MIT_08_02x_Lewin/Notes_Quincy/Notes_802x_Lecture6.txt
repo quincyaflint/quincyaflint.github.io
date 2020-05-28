@@ -1,0 +1,34 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+Lecture 6: banana brooch
+High voltage breakdown, lightning, sparks, St. Elmo's fire
+-------------------------------------------------------------------------
+- Charges resides at the surface of conductors, but is not necessarily unifrmly distributed.
+
+- Surface charge density at places with smaller curvature than it is at points on the conductor with larger curvature. Consider 2 conducting spheres of different radius connected by a wire - they are now at equipotential. Therefore, Va=Q/4*pi*e0*Ra=Vb=Q/4*pi*e0*Rb SO... Qa/Ra=Qb/Rb. If radius of sphere b is 5 times larger than a, Rb=5Ra, then b has surface area 25x larger than a, so while Qb=5Qa, SIGb=SIGa/5 (from SIG=Q/4*pi*R^2). That is, the larger sphere, b, has more total charge but the smaller sphere has a greater surface charge density. 
+
+- Note also, electric field strongest at points with smaller radius/ curvature. Make Gaussian pillbox. Apply Gauss's Law: surface integral of electric flux throughout the whole surface equals enclosed charge divided by permittivity. --> AE = ASIG/e0.
+
+DEMO: Demonstrate that sharper points have higher electric fields. Charged (by electrophocus) cooking pot, showed electric field at large radius is less than at handles. The conductor is equipotential but the surface charge density is higher at handles than round surface.
+
+- Electric breakdown occurs when an electron in an electric field begins to accelerate and collides with oxygen and nitrogen molecules in the air and ionizes them (if it has enough kinetic energy). The free electron gains an electron from the ion and continues to collide with more molecules and ionizing avalanches. When ions become neutral again they produce light - a spark!
+
+- Electron Volt: 1 electron Volt of kinetic energy is gained when an electron at rest moves over a potential differnece of 1 Volt. Unit is the charge of 1 electron (1.6e-19 Joules) times 1 Volt.
+
+- Ionization occurs with electric fields of order 10e7 V/m. Electron in dry air (1 atmosphere) will move ~1 micron (1e-6 m) between collisions with molecules. To ionize N,O must have energy on order of 10eV. DeltaV~10V, DeltaX~10e-6m, E=DeltaV/DeltaX so E~100 MV/m for ionization.
+
+- When ions neutralize they produce light, heat the air, and produce a pressure wave (can be heard).
+
+- Explanation of lightning: treat cloud at 1 km height of size 5km wide by 10km high to form parallel plate capacitor with earth. This is not a fair assumption but we can calculate an approximation for the potetnial difference between the cloud and ground. V=Ed ~ 3e6*1e3 = 3e9 V/m in cloud. *Cannot extrapolate values from a small uniform field gap between 2 plates to a lightning strike bc the conditions for the continued propagation of an electric discharge are not the same as its initiation. If an electric discharge is spanning a gap longer than a few meters - a discharge can move in an electric field orders of magnitude smaller than the electric fields which produced the initial electron avalanche... 
+
+- Start of lightning begins when electrons flow from cloud to earth 1-10km in diameter called a stepped leader. Touches down down in ~5 ms and lowers ~.5C of charge so current = ~100 Amps. Stepped leader creates very hot, very conductive channel of ionized air. When stepped leader contacts earth electrons can now flow to ground called return stroke -> ~5C exchange. After return stroke 20ms, process can occur again now channel called dart leader.
+
+- DEMO: Turn on Van de Graff generator. Bring grounded hollow sphere close to create sparks between VDGG and sphere. Now brings in grounded spear toward VDGG and corona discharge appears AND the cracking of the VDGG stops - it has lowered the potential difference! Lastly he brings in tinsel to do corona discharge and got a spark too!
+
+- Cool: St Elmo's fire in Zeppelin explosion of Hindenberg blimp.
+- Cool: malaria gun - precursor to spark plugs in cars
+
+- DEMO: malaria gun.

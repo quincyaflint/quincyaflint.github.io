@@ -1,0 +1,25 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+4/10/20
+Lecture 24
+[RC Circuits and Transformers]
+-------------------------------------------------------------------------
+While Kirchoff's Law was not appropriate for circuit analysis with inductors, we can use Kirchoff's loop rule to analyze RC circuits.
+
+DEMO:
+Build RC circuit that has a switch that charges the capacitor in one position and shorts the battery in the other position. If the the switch is thrown fast in a square wave pattern we can see the voltage through the capacitor and the current across the plates change as a function of time as the capacitor charges and discharges.
+
+Transformers:
+We apply Faraday's law to understand transformers. We find that the ration of voltage in the secondary compared to primary is equal to the number of turns in the secondary compared to the primary. That is |V2 / V1| = N2 / N1.
+
+DEMO: Transformer
+We have a 220 turn primary coil and apply a voltage 110 V at 60 Hz. The secondary is a large loop of 1 turn, then 4 turns. The voltage in the secondary increases by a factor of 4 between the 1 turn and 4 turn secondary.
+
+DEMO: Transformer with large secondary current
+Using the same primary our secondary is now a large donut-shaped copper loop that has a nail shorting the copper together. When brought around the primary, a large current passes through the nail and it glows red hot until it melts and breaks.
+
+DEMO: Spark plugs in cars
+When a 12V battery and transformer are connected in a series a large current is built up in the transformer, then, when the switch is opened the current drops immediately and a spark is created across the secondary gap.

@@ -1,0 +1,36 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+4/7/20
+Lecture 22
+[Magnetism: Magnetic field effect on materials, historicis]
+-------------------------------------------------------------------------
+Magnetic Dipole Moment: Mu = I A
+
+Aligning magnetic dipoles in material [paramagnetic]
+     B = Bvac + B'
+If 
+     B'  proportional to Bvac,
+Then,
+     B' = Xm * Bvac
+So,
+     B = ( 1 + Xm ) * Bvac
+Where Xm is the magnetic susceptibility.
+
+DEMO 1: HISTORICIS
+Apply 60 Hz AC through solenoid to generate magnetic field, insert ferrous material and measure total B-field. Historicis effect visualized as applied voltage becomes positive and negative.
+
+We can demagnetize material by:
+Heating material to Currie point
+Hitting material to reset domains
+Reducing Bvac (Bvac is proportional to current so just reduce the amplitude)
+
+DEMO 2: ELECTROMAGNET
+A piece of metal is attracted to an electromagnet while it is running. When we turn off the electromagnet the metal object is still attracted because of historicis. The force is much weaker and can now be pulled apart.
+
+DEMO 3: MAGNETIC FIELD CONFIGURATIONS
+A nail on a string is attracted to a permanent magnetic but loses attraction force when another heavy metal object is brought in the vicinity and changes the magnetic field configuration.
+
+Maxwell's Equations have now been totally presented.

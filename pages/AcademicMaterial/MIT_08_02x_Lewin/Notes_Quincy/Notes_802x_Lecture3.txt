@@ -1,0 +1,11 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+Lecture 3: ELECTROSTATICS
+-------------------------------------------------------------------------
+- If net charge neutral in closed surface, total flux is zero.
+- Gauss's Law ALWAYS holds but is only useful in symmetric cases.
+- Charge UNIFORMLY distributed on sphere is same as point charge when outside sphere.
+- Gauss's Law holds because E-field drops off as 1/r2

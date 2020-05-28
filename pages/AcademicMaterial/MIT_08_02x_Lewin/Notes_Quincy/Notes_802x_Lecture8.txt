@@ -1,0 +1,62 @@
+MIT 8.02X: Electricity and Magnetism
+Dr. Walter Lewin
+Quincy's Notes
+
+-------------------------------------------------------------------------
+5/22/18
+Lecture 8 - cantalope brooch
+[Polarization, Dielectrics, Van de Graaff Generator, Capacitors]
+-------------------------------------------------------------------------
+- Electric fields can induce dipoles in insulators (dielectrics)
+- In insulators, electrons are bound to molecules/atoms
+- In conductors, electrons are free
+
+- Example: 2 parallel plates of area A are charged with certain potential, +- sigma_free. So, there is a potential difference between plates, charge will flow. There is an induced electric field E_free from + to - sigma_free. Now remove power supply - the charge is trapped and cannot change. Introduce dielectric. Now there is an induced layer of charge, -sigma_induced at +sigma_free plate and +sigma_induced at -sigma_free plate. An electric field E_induced is in the opposite direction of E_free.
+
+- Continuing. If we assume sigma_induced is some percent of sigma_free then we can relate the two by sigma_i = b*sigma_f where b<1. Recall E+sigma/e0. Now the net electric field is the difference E_net = E_f-E_i which we now write as E_net = E_f(1-b) where 1-b = 1/K where K is the DIELECTRIC CONSTANT. Now we write E=E_free/K.
+
+-Gauss's Law: the closed surface integral of E.dA is the the sum of all charges in box weighted by 1/e0. That is csint(E.dA) = 1/e0*sum(Q_ins) = 1/e0*sum(Q_free)/K.
+
+- External fields can induce dipoles in molecules. There are substances that are already dipoles! If we apply an external field, the substances align along field and strengthen the field. 
+
+- Permanent dipoles are generally much stronger than induced dipoles -- their dielectric constant k is much higher.
+
+- EXPERIMENT: 
+1a. Connect capacitor and ammeter in series and connect power supply across in parallel. let the capacitor plates be separated by a distance d. Let d=1mm, V=1500V. 
+
+1b. Once charged, disconnect power supply -- this traps the charge. 
+
+1c. Now increase gap to d=7mm. Qfree does not change so ammeter does not change, E field does not change, BUT potential is increased proportional to d, that is, voltage increses 7 fold, so V=10kV.
+
+2. V=10kV, d=7mm. Insert glass dielectric. Glass has dielectric constant K=5. No change in Qfree (ammeter same) BUT electric field reduced by factor K so the potential must also reduce by factor K.
+
+What happens to capacitance? C=Q/V. From before we know C=K*A*e0/d where we added the dielectric constant K here.
+    --> E = sigma_free/e0/K*A*e0/d
+	--> V = E*d
+	--> C = qfree/V = k*A*e0/d
+
+3a. Start over. Connect capacitor and ammeter in series and connect power supply across in parallel. let the capacitor plates be 1mm apart, d=1mm, and V=1500V. 
+
+3b. Once charged, do NOT disconnect power supply. Now, move plates to d=7mm apart. Now potential difference will remain the same so the electric field must decrease because d is increased but voltage is same. Also, capacitance decreases. So free charges will decrease by 7 and so charges flow from plates so ammeter will move.
+
+4. V=1500v, d=7mm. Insert glass dielectric. So, voltage is unchanged because connected to power supply. Capacitance will increase by K. Qfree will increse by a factor of K (that is charge flows from plates - ammeter will move). Note, electric field will NOT change even with dielectric! 
+
+
+- WL says none of this is intuitive - it requires thought! Think about what is not changing and check consequences.
+
+
+CAPACITORS:
+- How do we build a large capacitor? C=K*A*e0/d. If we make d too small we will exceed breakdown field and we might get sparks. 
+
+- Consider 2 capacitors of the same capacitance, say 100 uF but 1 is rated for 4000V and the other for 40V. If the plates are separated by polyeteheline, K=3 then we can move the plates closer on 1 before breakdown. a1/d1 = a2/d2. The one that handles higher voltage is much bigger in area and thickness.
+
+- Capacitor invented by Dr. Musschenbroek, called it a Leyden Jar. Charged 2 metal plates separated by a glass beaker.
+
+
+DEMO: Took a leyden jar, charged it, reomved power supply. Then disassembled and grounded outer and inner conductor. Then he shorted but there was a spark! Energy was conserved?!?
+
+- Secret of Van de Graaf: 
+--- in general, if we try to charge a sphere from the outside by charging a rod, then touching the metal sphere, we can't charge to great voltage. Eventually we reach a point where the potential difference is the same, no electric field, so cannot transfer charge. 
+--- if we move charging rod inside we do have a change in potential and no electric field.
+
+DEMO: WL charged a paint bucket from the outside up to about 3kV before saturation (reached maximum voltage of power supply). He charged from the inside up to 30kV! Then touched it to get an electric shock.
