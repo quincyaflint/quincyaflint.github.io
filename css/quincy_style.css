@@ -48,7 +48,7 @@
 	font-size: 5em;
 	line-height: 100%;
 	font-weight: normal;
-	text-shadow: 4px 4px 4px #000;
+	text-shadow: .05em .05em .05em #000;
 
 }
 .title a {
@@ -65,7 +65,7 @@
   margin-bottom: 0rem;
   /*background-color: #FF5733;*/
 }
-.title a {
+.minitron a {
 	text-decoration:none;
 	color:#ffffff;
 	padding-left:1px;
