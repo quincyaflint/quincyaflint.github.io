@@ -93,7 +93,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-image: linear-gradient(#fffff, #fffff);
+  
+  /* background-color: #fff; */
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -574,10 +576,11 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
+  /* background-color: #fff; */
 }
 
 @media (min-width: 576px) {
@@ -6841,6 +6844,10 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-blue {
+  background-color: #e6f5ff !important;
 }
 
 .bg-transparent {
