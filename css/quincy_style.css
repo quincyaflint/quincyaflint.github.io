@@ -45,11 +45,10 @@
 .title {
 	color: #ffffff;
 	font-family: 'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
-	font-size: 70px;
-	line-height: 120%;
+	font-size: 5em;
+	line-height: 100%;
 	font-weight: normal;
 	text-shadow: 4px 4px 4px #000;
-	padding-top: 60px;
 
 }
 .title a {
@@ -63,6 +62,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2rem 1rem;
+  margin-bottom: 0rem;
   /*background-color: #FF5733;*/
 }
 .title a {
