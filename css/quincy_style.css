@@ -74,11 +74,16 @@
   margin-bottom: 0rem;
   /*background-color: #FF5733;*/
 }
-.sitebanner a {
-	text-decoration:none;
-	color:#ffffff;
-	padding-left:1px;
+
+.sitefooter {
+  background-image: url('../images/footer/footer1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2rem 1rem;
+  margin-bottom: 0rem;
+  /*background-color: #FF5733;*/
 }
+
 
 /* End of Quincy's Contributions */
 
@@ -203,7 +208,7 @@ a {
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not([href]) {
