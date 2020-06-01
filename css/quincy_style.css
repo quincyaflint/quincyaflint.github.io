@@ -57,15 +57,15 @@
 	padding-left:1px;
 }
 
-.minitron {
-  background-image: url('../images/header/header2.jpg');
+.sitebanner {
+  background-image: url('../images/header/header4.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 2rem 1rem;
   margin-bottom: 0rem;
   /*background-color: #FF5733;*/
 }
-.minitron a {
+.sitebanner a {
 	text-decoration:none;
 	color:#ffffff;
 	padding-left:1px;
@@ -93,9 +93,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-image: linear-gradient(#fffff, #fffff);
-  
-  /* background-color: #fff; */
+  background-image: linear-gradient(#E1E1E1, #B9C6C8);
+  /* background-color: #FFFCF7; */
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6849,6 +6848,11 @@ button.bg-dark:focus {
 .bg-blue {
   background-color: #e6f5ff !important;
 }
+
+.bg-retro {
+  background-color: #98C0B9 !important;
+}
+
 
 .bg-transparent {
   background-color: transparent !important;
