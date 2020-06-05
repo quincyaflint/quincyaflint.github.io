@@ -65,9 +65,9 @@ function boggle_n(n){
 	}
 	
 	if (n==4) {
-		document.write('<tr><td colspan="'+n+'"><a href="./boggle.html">ROLL THE DICE AGAIN</a></td></tr>');
+		document.write('<tr><td colspan="'+n+'"><a href="../pages/boggle.html">ROLL THE DICE AGAIN</a></td></tr>');
 	} else if (n==5) {
-		document.write('<tr><td colspan="'+n+'"><a href="./boggle-big.html">ROLL THE DICE AGAIN</a></td></tr>');
+		document.write('<tr><td colspan="'+n+'"><a href="../pages/boggle-big.html">ROLL THE DICE AGAIN</a></td></tr>');
 	}
 	document.write('</table></center>');
 	return true;
