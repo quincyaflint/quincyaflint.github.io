@@ -15,6 +15,10 @@
 	<!-- <link rel="stylesheet" href="../css/normalize.css"> -->
 	<!-- <link rel="stylesheet" href="../css/main.css"> -->
 	
+	
+	<script type="text/javascript" src="boggle-js.js"></script>
+	<script type="text/javascript" src="boggle-timer-js.js"></script>
+
 	<!-- Google Fonts API -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
@@ -46,23 +50,19 @@
 	
 	<!-- PAGE HEADER -->
 	<div class="page-header">
-		<div class="page-title">Other</div>
+		<div class="page-title">Boggle</div>
 		<hr class="horizontal-line">
 	</div>
 	
 	
-	<!-- SUB HEADING -->
-	<h1 align="center">Games</h1>   
 	
-	<div class="mini-page">
-		<h2>Free Online Games</h2>
-		<h3>
-		Boggle: <a href="./boggle.html">link</a> <br>
-		Big-Boggle: <a href="./boggle.html">link</a> <br>
-		Scattegories: <a href="https://swellgarfo.com/scattergories/">link</a> <br>
-		</h3>
+	<!-- BOGGLE -->
+	<div class="mini-page" style="width:70%">
+		<button onclick="startTimer(150, document.querySelector('#time'))">Start counter</button>
+		<div><h1>Timer: <span id="time">02:30</span> </h1></div>
+		<script language="javascript">boggle();</script>
 	</div>
-	
+
 	
 	
 	<!-- WHITE SPACE -->
@@ -77,5 +77,9 @@
 	<!-- END OF SITE BODY -->
 	</div>
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
