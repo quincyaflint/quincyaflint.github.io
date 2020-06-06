@@ -59,6 +59,15 @@
 	
 	<div class="mini-page">
 	<div id="main">
+		
+		<!-- PANEL BELOW BOARD -->
+		<div id="panel">
+			<!-- TIMER -->
+			<button type='button' class='btn panel_button' onclick="timer(150, document.querySelector('#time'))">Start Clock</button>
+			
+			<button type='button' class='btn panel_button'><span id="time">02:30</span> </button>		
+		</div>	
+		
 	
 		<!-- BOGGLE BOARD -->
 		<div id="board">
@@ -68,20 +77,24 @@
 			<div id="row3"></div>
 			<div id="row4"></div>
 		</div>
+		
+		
 		<!-- PANEL BELOW BOARD -->
-		<div id="panel">
-			<button type='button' class='btn action_btn restart' onclick="location.reload()">
+		<div id="panel">			
+			<!-- RESTART BUTTON -->
+			<button type='button' class='btn panel_button' onclick="location.reload()">
 				<img src="../images/pages/games/boggle-restart.png" alt="restart">
-				Restart Game
-			</button>			
+				New Game
+			</button>
+			
 		</div>	
-
 	</div>
 	<script type="text/javascript" src="../js/boggle-new-js.js"></script>
 	
 	</div>
 	
-	
+	<button type='button' class='dice' col='1'>1</button>
+	<button type='button' class='dice' col='2'>2</button>
 	
 	
 	

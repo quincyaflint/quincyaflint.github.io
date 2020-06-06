@@ -1,65 +1,62 @@
+
+// GLOBAL VARIABLES
+var dice_list_4 = [
+'ARELSC','TABIYL','EDNSWO','BIOFXR',
+ 'MCDPAE','IHFYEE','KTDNUO','MOQAJB',
+ 'ESLUPT','INVTGE','ZNDVAE','UKGELY',
+ 'OCATAI','ULGWIR','SPHEIN','MSHARO'
+];
+
+var dice_list_5 = [
+'AAAFRS','AAEEEE','AAFIRS','ADENNN','AEEEEM',
+'AEEGMU','AEGMNN','AFIRSY','BJKQXZ','CCNSTW',
+'CEIILT','CEILPT','CEIPST','DDLNOR','DHHLOR',
+'DHHNOT','DHLNOR','EIIITT','EMOTTT','ENSSSU',
+'FIPRSY','GORRVW','HIPRRY','NOOTUW','OOOTTU'
+];
+
+
+// FUNCTION: START GAME
 function boggle_n(n){
-	var i = 0, j = 0, k = 0; 
-	var ranvar, save;
 	var num_dice = n*n;
-	var num_dice_from_0 = num_dice-1;
-	var g = new Array(num_dice_from_0);
-	var dice = new Array(num_dice_from_0);
-	var cubes_4x4 = new Array(
-		'AAEEGN','ABBJOO','ACHOPS','AFFKPS',
-		'AOOTTW','CIMOTU','DEILRX','DELRVY',
-		'DISTTY','EEGHNW','EEINSU','EHRTVW',
-		'EIOSST','ELRTTY','HIMNQU','HLNNRZ');
-	var cubes_5x5 = new Array(
-		'AAAFRS','AAEEEE','AAFIRS','ADENNN','AEEEEM',
-		'AEEGMU','AEGMNN','AFIRSY','BJKQXZ','CCNSTW',
-		'CEIILT','CEILPT','CEIPST','DDLNOR','DHHLOR',
-		'DHHNOT','DHLNOR','EIIITT','EMOTTT','ENSSSU',
-		'FIPRSY','GORRVW','HIPRRY','NOOTUW','OOOTTU');
-
-	if (n==4){
-		d = cubes_4x4;
-	} else if (n==5) {
-		d = cubes_5x5;
-	}
-
-	// g = 1:num_dice
-	for (i=0; i < num_dice; i++) {
-		g[i] = i;
+	var dice_grid = [];
+	var dice_list = [];
+	var die_face;
+	var t1, t2;
+	
+	if (n==4){dice_list=dice_list_4};
+	if (n==5){dice_list=dice_list_5};
+	
+	// SHUFFLE DICE
+	for(let i=n;i>0;i--){
+		t1 = Math.floor(Math.random()*i);
+		t2 = dice_list[i-1];
+		dice_list[i-1] = dice_list[t1];
+		dice_list[t1] = t2;
 	}
 	
+	
+	// PICK FACE OF EACH DIE
+	for(let i=0;i<num_dice;i++){
+		die_face = dice_list[i][Math.floor(Math.random()*6)];
+		if(die_face==='Q'){die_face = 'Qu'};
+		dice_grid.push(die_face);
+	}
+	
+	
+	// RENDER BOARD IN HTML
 	document.write('<p>');
-	do {
-		ranvar = Math.round(Math.random()*num_dice_from_0); // random number between 0 and n*n-1
-		save = g[num_dice_from_0];
-		g[num_dice_from_0] =  g[ranvar];
-		dice[num_dice_from_0] = g[num_dice_from_0];
-		g[ranvar] = save;
-		num_dice_from_0 = num_dice_from_0 - 1;
-	} while ( num_dice_from_0 > 0 );
-
-	// Get the letter from each die
-	for (i=0; i < num_dice; i++) {
-		save = g[i];
-		ranvar = Math.round(Math.random()*5);
-		g[i] = d[save].substring(ranvar,ranvar+1);
-	}
-
-	
-	// Fix Q's --> Qu's
-	for (i=0; i < num_dice; i++) {
-			if (g[i] == 'Q') { g[i] = 'Qu' }
-	}
-	
 	// Establish table
+	
 	document.write('<center><table class="centered" border="2" cellpadding="20" cellspacing="0">');
-	//document.write('<h1>Timer: <span id="time">02:30</span> </h1>');
+	//document.write('<h1>Timer: <span id="time1">02:30</span> </h1>');
+	//document.write('<button onclick="startTimer(150, document.querySelector('#time1'))">Start Timer</button>');
 	
 	// Print each die value by row [i] and element in row [j]
-	for (i=0; i < n; i++) {
+	for (let i=0; i < n; i++) {
 		document.write('<tr>');
-		for (j=0; j < n; j++) {
-			document.write('<td width=100 height=100><font size="7">'+g[n*i+j]+'</font></td>');
+		for (let j=0; j < n; j++) {
+			document.write('<td width=100 height=100><font size="7">'+dice_grid[n*i+j]+'</font></td>');
 		}
 		document.write('</tr>');
 	}
@@ -72,6 +69,8 @@ function boggle_n(n){
 	document.write('</table></center>');
 	return true;
 }
+
+
 
 function startTimer(duration, display) {
     var start = Date.now(),
