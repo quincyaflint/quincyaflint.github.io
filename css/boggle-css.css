@@ -3,7 +3,7 @@
 	display: inline-block;
 	background-color: #F57921;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 }
 
 #board{
@@ -16,8 +16,7 @@
 #panel{
 	width: 100%;
 	display: table;
-	margin: auto;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .dice{
@@ -48,11 +47,16 @@ button:disabled {cursor: not-allowed;}
 }
 
 
-.panel_button{
-	background-color: lightblue;
-	padding: 10px;
+.panel_btn{
+	display: inline-block;
+    padding: 10px;
+	font-size: 40px;
+    background-color: white;
+	width: auto;
+	height: auto;
 }
-.panel_button img{
-	width:15px;
-	height:15px;
+.panel_btn img{
+	width: 30px;
+	height: 30px;
 }
+

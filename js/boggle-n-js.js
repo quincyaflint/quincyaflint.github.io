@@ -48,7 +48,7 @@ function boggle_n(n){
 	document.write('<p>');
 	// Establish table
 	
-	document.write('<center><table class="centered" border="2" cellpadding="20" cellspacing="0">');
+	document.write('<table class="centered" style="border:2px solid #000;padding:20px;">');
 	//document.write('<h1>Timer: <span id="time1">02:30</span> </h1>');
 	//document.write('<button onclick="startTimer(150, document.querySelector('#time1'))">Start Timer</button>');
 	
@@ -56,7 +56,7 @@ function boggle_n(n){
 	for (let i=0; i < n; i++) {
 		document.write('<tr>');
 		for (let j=0; j < n; j++) {
-			document.write('<td width=100 height=100><font size="7">'+dice_grid[n*i+j]+'</font></td>');
+			document.write('<td style="width:100px;height:100px;font-size:40px;border:2px solid #000;">'+dice_grid[n*i+j]+'</td>');
 		}
 		document.write('</tr>');
 	}
@@ -66,7 +66,7 @@ function boggle_n(n){
 	} else if (n==5) {
 		document.write('<tr><td colspan="'+n+'"><a href="../pages/boggle-big.html">ROLL THE DICE AGAIN</a></td></tr>');
 	}
-	document.write('</table></center>');
+	document.write('</table>');
 	return true;
 }
 
@@ -78,11 +78,8 @@ function startTimer(duration, display) {
         minutes,
         seconds;
     function timer() {
-        // get the number of seconds that have elapsed since 
-        // startTimer() was called
         diff = duration - (((Date.now() - start) / 1000) | 0);
 
-        // does the same job as parseInt truncates the float
         minutes = (diff / 60) | 0;
         seconds = (diff % 60) | 0;
 
@@ -91,13 +88,7 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds; 
 
-        if (diff <= 0) {
-            // add one second so that the count down starts at the full duration
-            // example 05:00 not 04:59
-            start = Date.now() + 1000;
-        }
     };
-    // we don't want to wait a full second before the timer starts
     timer();
     setInterval(timer, 1000);
 }

@@ -60,17 +60,14 @@ function start_game(n){
 	
 }
 
-function timer(duration, display) {
+function timerFunction(duration, display) {
     var start = Date.now(),
         diff,
         minutes,
         seconds;
-    function timer() {
-        // get the number of seconds that have elapsed since 
-        // startTimer() was called
+    function mytimer() {
         diff = duration - (((Date.now() - start) / 1000) | 0);
 
-        // does the same job as parseInt truncates the float
         minutes = (diff / 60) | 0;
         seconds = (diff % 60) | 0;
 
@@ -83,41 +80,7 @@ function timer(duration, display) {
 		clearInterval(myVar);
 	}
 
-    timer();
-    myVar = setInterval(timer, 1000);
+    mytimer();
+    myVar = setInterval(mytimer, 1000);
 }
 
-
-function IntervalTimer(callback, interval) {
-	var timerId, startTime, remaining = 0;
-	var state = 0; //  0 = idle, 1 = running, 2 = paused, 3= resumed
-
-	this.pause = function () {
-		if (state != 1) return;
-
-		remaining = interval - (new Date() - startTime);
-		window.clearInterval(timerId);
-		state = 2;
-	};
-
-	this.resume = function () {
-		if (state != 2) return;
-
-		state = 3;
-		window.setTimeout(this.timeoutCallback, remaining);
-	};
-
-	this.timeoutCallback = function () {
-		if (state != 3) return;
-
-		callback();
-
-		startTime = new Date();
-		timerId = window.setInterval(callback, interval);
-		state = 1;
-	};
-
-	startTime = new Date();
-	timerId = window.setInterval(callback, interval);
-	state = 1;
-}
