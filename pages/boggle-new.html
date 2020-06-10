@@ -60,20 +60,19 @@
 		<!-- PANEL ABOVE BOARD -->
 		<div id="panel">
 			<!-- TIMER -->
-			<button type='button' class='btn panel_btn' onclick="timerFunction(150, document.querySelector('#time'))">
+			<button type='button' class='btn panel_btn' onclick="timerFunction('play', 150, document.querySelector('#time'))">
 				<img style="margin-left:10px; margin-right:10px;" src="../images/pages/games/boggle-play.png" alt="restart"> 
 			</button>			
-			<button type='button' class='btn panel_btn'><span id="time">02:30</span> </button>	
-			
-			
-			<!-- TIMER -->
-			<button type='button' class='btn panel_btn' onclick="IntervalTimer(resume(), 30)">
-				<img style="margin-left:10px; margin-right:10px;" src="../images/pages/games/boggle-play.png" alt="restart"> 
-			</button>			
-			<button type='button' class='btn panel_btn'><span id="time1">00:30</span> </button>
+			<button type='button' class='btn panel_btn' style="color:#398BD4"><span id="time">02:30</span> </button>	
+			<button type='button' class='btn panel_btn' onclick="timerFunction('stop', 150, document.querySelector('#time'))">
+				<img style="margin-left:10px; margin-right:10px;" src="../images/pages/games/boggle-stop.png" alt="restart"> 
+			</button>	
 		</div>	
 		
+		
+		<!-- MAIN BOARD -->
 		<div id="main">	
+		
 			<!-- BOGGLE BOARD -->
 			<div id="board">
 				<div id="row0"></div>
@@ -83,9 +82,17 @@
 				<div id="row4"></div>
 			</div>
 			
+			<div id="error">&nbsp;</div>
 			
 			<!-- PANEL BELOW BOARD -->
-			<div id="panel">			
+			<div id="panel">
+				<div>
+					<div style="font-size:30px;">Current Word:<span id="current_word"></span></div>
+				</div>
+			
+				<!-- SUBMIT -->
+				<button type='button' class='btn panel_btn' id="submit">Submit Word</button>
+			
 				<!-- RESTART BUTTON -->
 				<button type='button' class='btn panel_btn' onclick="location.reload()">
 					<img src="../images/pages/games/boggle-restart.png" alt="restart">
@@ -96,6 +103,18 @@
 		<script type="text/javascript" src="../js/boggle-new-js.js"></script>
 
 	</div><!-- MAIN -->
+
+	<!-- WORD BANK BELOW BOARD -->
+	<div>
+		<div id="score-table">
+			<div class="table-title"><span>Word</span><span>Score</span></div>
+			<div id="table_words"></div>
+			<div class="table-total"><span>Total:</span><span id="total-score">0</span></div>
+		</div>
+	</div>
+				
+	
+	
 	</div> <!-- MINI PAGE -->
 	
 	
