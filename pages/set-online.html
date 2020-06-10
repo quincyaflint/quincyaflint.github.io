@@ -1,0 +1,115 @@
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Set Game Puzzle</title>
+<style>
+canvas
+{
+ border:2px solid black;
+ border-radius:10px;
+ vertical-align:top;
+}
+input
+{
+ font-size:18px;
+ background-color:#ccc;
+ border-radius:8px;
+}
+div.instr
+{
+ width:500px;
+}
+ul
+{
+ margin:0px;
+ font-size:15px;
+}
+.messages
+{
+ display:inline-block;
+ border:1px solid black;
+ margin:10px;
+ width:400px;
+ text-align:center;
+ font-size:18px;
+}
+.rightwrong
+{
+ display:none;
+ position:absolute;
+ margin-top:75px;
+}
+
+</style>
+</head>
+<body style="background-color:#cdf">
+
+<img align=right src="../smlogo.gif" alt="logo">
+<table border="0">
+    <tr>
+      <td><font size="5">The Set Game</font></td>
+      <td width="10%">&nbsp;</td>
+      <td>
+	 <a href="../../index.html">Home</a> &nbsp;|&nbsp;
+	
+	<a 
+	
+ href=/feedback.png
+
+
+	>Your Feedback</a>
+      </td>
+    </tr>
+</table>
+<br clear=all>
+<hr>
+
+<DIV style="text-align:center">
+<img src="setpuzDup.png" id="dup" class=rightwrong>
+<img src="setpuzWrong.png" id="wrong" class=rightwrong>
+<img src="setpuzGold.png" id="gold" class=rightwrong>
+<img src="setpuzSilver.png" id="silver" class=rightwrong>
+<img src="setpuzRight.png" id="gotit" class=rightwrong>
+<img src="setpuzs1.png" id="s1" class=rightwrong>
+<img src="setpuzs2.png" id="s2" class=rightwrong>
+<img src="setpuzs3.png" id="s3" class=rightwrong>
+<img src="setpuzs4.png" id="s4" class=rightwrong>
+<img src="setpuzs5.png" id="s5" class=rightwrong>
+<canvas id=canvas2 width=600 height=300 style="display:none"> </canvas>
+<canvas id=canvas1 width=550 height=250> </canvas>
+<canvas id=canvas3 width=225 height=250> </canvas>
+
+<div style="text-align:center;margin-left:20px;">
+<div id=mdebug class=messages>
+</div>
+<div id=session class=messages style="width:190px;margin-left:110px;">
+&nbsp;
+</div>
+  <br>
+<input type=button id=easybut value="Easy" onclick="setLevelEasy()">
+&nbsp;
+<input type=button id=hardbut value="Hard" onclick="setLevelHard()">
+&nbsp;
+<input type=button id=pausebut value="Pause" onclick="PauseResume()">
+&nbsp;
+<input type=button id=clearbut value="Clear" onclick="finishCheck(false,null)">
+&nbsp;
+<input type=button id=hintbut value="Hint" onclick="Hint()">
+&nbsp;
+
+<input type=button value="New puzzle" onclick="newpuzzle()">
+&nbsp;
+<div style="margin-right:140px;display:inline;"></div>
+
+<input type=button id=sessbut value="New Session" onclick="NewSession()">
+</DIV>
+
+<hr>
+
+<br>
+<div id=debug> </div>
+
+</div>
+
+<script src=../js/set-js.js> </script>
+</body>
