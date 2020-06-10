@@ -37,7 +37,7 @@ function start_game(n){
 	if (n==5){dice_list=dice_list_5};
 	
 	// SHUFFLE DICE
-	for(let i=n;i>0;i--){
+	for(let i=num_dice;i>0;i--){
 		t1 = Math.floor(Math.random()*i);
 		t2 = dice_list[i-1];
 		dice_list[i-1] = dice_list[t1];
