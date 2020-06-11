@@ -81,52 +81,42 @@ function drawshape(desc)
  g2.lineWidth = 3;
  if (shape == "D") // draw diamond
    {
+	//var img = document.getElementById("DOB");
+	//g2.drawImage(img, x, y, figw, figh);
     g2.moveTo(x+figw/2, y);
     g2.lineTo(x+figw, y+figh/2);
     g2.lineTo(x+figw/2, y+figh);
     g2.lineTo(x, y+figh/2);
     g2.lineTo(x+figw/2, y);
    }
- else if (shape == "O")
+ else if (shape == "O") // draw oval
    {
     divisor = 0.6;
     g2.scale(divisor, 1);
     g2.arc(x/divisor+figh/2, y+figh/2, figh/2, 0, Math.PI*2, false);
     g2.lineWidth = 4;
    }
- else if (shape == "T")
+ else if (shape == "T") // draw triangle
    {
     g2.moveTo(x+figw/2, y);
     g2.lineTo(x+figw, y+figh);
     g2.lineTo(x, y+figh);
     g2.lineTo(x+figw/2, y);
    }
- //debug(desc + " " + offset1 + offset2 + offset3 + ": " + x + "," + y);
  g2.strokeStyle = colors[offset1];
  g2.stroke();
  g2.clip();
- if (shade == "F") 
+ if (shade == "F") // filled
    {
     g2.fillStyle = colors[offset1];
     g2.fill();
    }
- else if (shade == "S")
+ else if (shade == "S") // striped
    {
     g2.fillStyle = ltcolors[offset1];
     g2.fill();
     var i;
-    /*
-    g2.strokeStyle = colors[offset1];
-    g2.lineWidth = 2;
-    g2.beginPath();
-    for (i = 0; i<13; i++)
-      {
-       g2.moveTo(x/divisor, y+6*i);
-       g2.lineTo((x+figw)/divisor, y+6*i);
-      }
-    g2.closePath();
-    g2.stroke();
-    */
+
    }
  g2.restore();
 }
