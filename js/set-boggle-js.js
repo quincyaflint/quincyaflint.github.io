@@ -57,13 +57,10 @@ function start_game(){
 	for(let i=0;i<num_cards_game;i++){
 		card_numbers.push(Math.floor(Math.random()*3)+1);
 	}
-
-	document.write(card_numbers);
 	
 	// RENDER BOARD IN HTML
 	for(var row=0;row<nrows;row++){
 		for(var col=0;col<ncols;col++){
-			//card_face = "<img src='../images/pages/games/set/"+card_grid[row*nrows+col]+".png' style='width:72px;height:29px;'>";
 			var index = row*nrows+col;
 			
 			if (card_numbers[index] == 1) {
