@@ -62,7 +62,7 @@
 	<!-- MIT 8.06 -->
 	<div class="mini-page">
 	<a id="MIT_1803"></a>
-	<h2>MIT 18.03 Differential Equations with Arthur Mattuck</h2> 
+	<h2>MIT 18.03 Differential Equations with Arthur Mattuck</h2>
 	<table class="left table-hover">
 		<tr>
 			<th>PDF Link</th>
@@ -70,31 +70,31 @@
 		</tr>
 		<tr>
 			<td>Lecture 1</td>
-			<td>First order ODEs of the form y' = f(x,y)</td>
+			<td><a href="#MIT_1803_L1">First order ODEs of the form y' = f(x,y)</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 2</td>
-			<td>Numerical solutions to differential equations by Euler's Method</td>
+			<td><a href="#MIT_1803_L2">Numerical solutions to differential equations by Euler's Method</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 3</td>
-			<td>First-order linear equations and the separation of variables</td>
+			<td><a href="#MIT_1803_L3">First-order linear equations and the separation of variables</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 4</td>
-			<td>Change of variables and substitutions</td>
+			<td><a href="#MIT_1803_L4">Change of variables and substitutions</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 5</td>
-			<td>Autonomous differential equations, integral curves, critical points</td>
+			<td><a href="#MIT_1803_L5">Autonomous differential equations, integral curves, critical points</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 6</td>
-			<td>Complex numbers, polar form</td>
+			<td><a href="#MIT_1803_L6">Complex numbers, polar form</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 7</td>
-			<td> Linear first order ODEs</td>
+			<td><a href="#MIT_1803_L7">Linear first order ODEs</a></td>
 		</tr>
 		<tr>
 			<td>Lecture 8</td>
@@ -102,9 +102,236 @@
 		</tr>
 	</table>
 	</div>
+		
+		
+	<!-- WHITE SPACE -->
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
 	
 	
-
+	<!-- MIT 8.03 <li></li> -->
+	<div class="mini-page" style="line-height:2">
+		<h2>Lectures</h2>
+	</div>
+		
+		
+		
+	<a id="MIT_1803_L1"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 1:</h3>
+		<ul class="indent">
+			<li>Topics: first order ODEs of the form y' = f(x,y), </li>
+			<li>​Geometric view of differential equation (y' is direction field, solution y is integral curve)</li>
+			<li>To draw direction field, choose constant and solve f(x,y)=c 
+			<ul class="indent">
+				<li>[all solutions have same slope along this curve -- this is called an isocline]</li>
+			</ul>
+			<li>Example: y' = -x/y with direction field, integral curves, and analytical solution</li>
+			<li>Example y' = 1+x-y with isoclines and integral curves </li>
+			<li>Existence and uniqueness theorem introduced</li>
+			<li>Example: dy/dx = y-1/x,  existence not guaranteed at x=0</li>
+		</ul>			
+	</div>
+		
+	<p>&nbsp;</p>
+	
+	
+	
+	<a id="MIT_1803_L2"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 2:</h3>
+		<ul class="indent">
+			<li>Topics: numerical solutions to differential equations by Euler's Method</li>
+			<li>Euler's Method: begin at initial point (x0) with initial slope (A0). Increment by step size (h) and calculate new slope (An) at this new point (xn, yn). Continue method until stable.</li>
+			<ul class="indent">
+				<li>We get: y_n+1 - y_n = h * A_n,</li>
+				<li>So our Euler Equations are:</li>
+				<ul class="indent">
+					<li>x_n+1 = x_n + h</li>
+					<li>y_n+1 = y_n + h*A_n</li>
+					<li>A_n = f(x_n, y_n)</li>
+				</ul>
+			</ul>
+			<li>How good is Euler's Method?</li>
+			<ul class="indent">
+				<li>If solution is a straight line, the Euler's Method will produce exact solution.</li>
+				<li>If solution is convex, Euler's method will produce results that are too low.</li>
+				<li>If solution curve is concave, Euler's method will estimate solutions that are too high.</li>
+				<li>We can address this problem without plotting the solution by taking the second derivative of the solution (or simply using the given differential equation and initial value).</li>
+				<li>We know a lot about the form of the solution simply by looking at the differential equation without analytically calculating a solution.</li>
+			</ul>
+			<li>How do we improve accuracy of numerical estimate of solution?</li>
+			Use smaller step-sizes
+			<ul class="indent">
+				<li>Halving the error halves the error</li>
+			</ul>
+			<li>Use a better estimate of the slope</li>
+			<ul class="indent">
+			<li>Runge-Kutta 2nd Order Method (RK2, RK4)</li>
+			<li>(also called Modified Euler's Method)</li>
+		</ul>			
+	</div>
+	
+	<p>&nbsp;</p>
+	
+	<a id="MIT_1803_L3"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 3:</h3>
+		<ul class="indent">
+			<li>​Topics: first-order linear equations and the separation of variables</li>
+			<li>​Linear equations take the form:</li>
+			<ul class="indent">
+				<li>a(x)y' + b(x)y = c</li>
+			</ul>
+			<li>The standard linear form is:</li>
+			<ul class="indent">
+				<li>y' + p(x)y = q</li>
+			</ul>
+			<li>Equations in standard linear form (SLF) can always be solved. This form makes the physical interpretation meaningful as sources are on the right-hand side.</li>
+			<li>Examples:</li>
+			<ul class="indent">
+				<li>Conduction cooler problem: dT/dt = k(Te - T)</li>
+				<li>Diffusion model: dC/dt = k(Ce-C)</li>
+			</ul>
+			<li>Solving DE in SLF</li>
+			<ul class="indent">
+			​<li>1. Put equation in standard form, y' + p(x)y = q,</li>
+				<li>2. Find integrating factor u(x) such that</li>
+				<ul class="indent">
+					<li>u = exp( int(p dx) )   is our integrating factor</li>
+					<li>we want u' = pu so we can use derivative rules</li>
+					<li>uy' + puy = qu,</li>
+				</ul>
+				<li>3. Multiply both sides of equation by u(x),</li>
+				<li>4. Integrate and solve.</li>
+			</ul>
+			<li>Solutions to DE composed of steady-state solution and transient</li>
+		</ul>			
+	</div>
+	
+	<p>&nbsp;</p>
+	
+	<a id="MIT_1803_L4"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 4:</h3>
+		<ul class="indent">
+			​<li>Topics: change of variables and substitutions</li>
+			<li>Change of variable #1: scaling:</li>
+			<ul class="indent">
+				<li>For example:  x1 = x/a,  y1 = y/b
+				<li>we scale to: change units, make variables dimensionless, simplify constants
+			</ul>
+			<li>Direct substitutions are those where the new variable combine old variables.</li>
+			<li>Indirect substitutions are those values where old variables are a combination of new variables.</li>
+			<li>Bernoulli Equations are those ODEs of the form:</li>
+			<ul class="indent">
+				<li>y' = p(x)*y + q(x)*y^n</li>
+				<li>Solve by dividing by y^n, this will produce a linear equation upon substitution</li>
+				<ul class="indent">
+					<li>Let  v = 1/(y^n-1),</li>
+					<li>then v' = (1-n) * y' / y^n</li>
+					<li>and so we have the linear equation:  v' / (1-n) = p(x)*v + q(x)</li>
+					<li>Solve and convert back to y from v</li>
+				</ul>
+			</ul>
+			<li>Homogeneous 1st Order ODEs are those in the form:
+			<ul class="indent">
+				<li>y' = F(y/x)</li>
+				<li>For example we can rewrite y' =  x^2*y / (x^3 +y^3) as y' = x/y / (1 + (x/y)^3)	</li>	
+			</ul>
+		</ul>
+	</div>
+	
+	<p>&nbsp;</p>
+	
+	<a id="MIT_1803_L5"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 5:</h3>
+		<ul class="indent">
+			<li>​​Topics: autonomous differential equations, integral curves, critical points</li>
+			<li>Autonomous Differential Equations:</li>
+			<ul class="indent">
+				<li>Right-hand side does not contain independent variable</li>
+				<li>Difficult to integrate directly</li>
+				<li>Integral curves are invariant under translation (easy to plot)</li>
+			</ul>
+			<li>Problem: want to get qualitative information about system without solving</li>
+			<li>Plot Direction Field</li>
+			<ul class="indent">
+				<li>1. Find critical points: solve f(y0) = 0</li>
+				<li>2. Graph f(y) to see slope</li>
+			</ul>
+			<li>Logistic Growth Equation:   
+			<ul class="indent">
+				<li>dy/dt = ky    given    k = a-by</li>
+				<li>f'(y) = ay - by^2</li>
+			</ul>
+		</ul>
+	</div>
+	
+	<p>&nbsp;</p>
+	
+	<a id="MIT_1803_L6"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 6:</h3>
+		<ul class="indent">
+			<li>​​Topics: complex numbers, polar form</li>
+			<li>​​Euler's Relation:</li>
+			<ul class="indent">
+				<li>exp(i*theta) = cos(theta) + i*sin(theta)</li>
+			</ul>
+			<li>​​Exponents satisfy:</li>
+			<ul class="indent">
+				<li>Exponential Law:</li>
+				<ul class="indent">
+					<li>a^x * a^y = a^(x+y)</li>
+				</ul>
+				<li>Only function we have that has this property:</li>
+				<ul class="indent">
+					<li>For a solution y = exp(at),    dy/dt = ay</li>
+					<li>That is, it's derivative is itself again (times constant term)</li>
+				</ul>
+				<li>Infinite series should behave nicely
+			</ul>
+			<li>​​Polar form is good for multiplication of complex numbers
+		</ul>
+	</div>
+	
+	<p>&nbsp;</p>
+	
+	<a id="MIT_1803_L7"></a>
+	<div class="mini-page" style="line-height:2">
+		<h3>Lecture 7:</h3>
+		<ul class="indent">
+			<li>​​Topics: linear first order ODEs</li>
+			<li>​​Special Form:</li>
+			<ul class="indent">
+				<li>y' + ky = k q_e(t)</li>
+			</ul>
+			<li>​​Solutions to 1st order differential equations</li>
+			<ul class="indent">
+				<li>Sum of steady-state and transient solutions</li>
+			</ul>
+			<li>​​1st order ODE with trigonometric Input</li>
+			<ul class="indent">
+				<li>Problem:</li>
+				<ul class="indent">
+					<li>y' + ky = k * cos(omega * t)</li>
+				</ul>
+				<li>Easiest to solve in the complex domain (integration is easier)</li>
+				<li>Use the real part of Euler's formula</li>
+				<ul class="indent">
+					<li>Now,  y' + ky = k e^(j * omega * t)</li>
+					<li>Solution is    y = y1 + y2</li>
+				</ul>
+				<li>Final solution:
+				<ul class="indent">
+					<li>y = cos(omega*t - phi) / sqrt(1+ (omega/k)^2)</li>
+					<li>phi = arctan(omega / k)    [phase lag]</li>
+				</ul>
+			</ul>
+		</ul>
+	</div>
 
 	<!-- WHITE SPACE -->
 	<p>&nbsp;</p>
