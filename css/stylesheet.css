@@ -266,6 +266,8 @@ table.table-hover tr:hover {background-color:#f5f5f5;}
   display: table;
 }
 
+
+/* MUSIC PAGE - OPEN MIC ITEM */
 .open-mic {
 	text-indent:-30px;
 	padding-left:30px;
@@ -275,4 +277,45 @@ table.table-hover tr:hover {background-color:#f5f5f5;}
 
 .open-mic::first-line{
 	font-weight:bold;
+}
+
+/* FOOD PAGE - RECIPE ITEMS */
+.recipe-card {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px;
+	border-style: solid;
+	overflow: auto;
+}
+
+.recipe-card .recipe-name {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.recipe-card .recipe-image {
+	padding:10px;
+	width:400px;
+	height:auto;
+	float:right;
+}
+
+.recipe-card .recipe-ingredients {
+	padding: 10px;
+}
+
+.recipe-card .recipe-ingredients ul {
+	font-size: 18px;
+	padding-left:30px;
+}
+
+.recipe-card .recipe-instructions {
+	padding: 10px;	
+}
+
+.recipe-card .recipe-instructions ol {
+	font-size: 18px;
+	padding-left:30px;
 }
