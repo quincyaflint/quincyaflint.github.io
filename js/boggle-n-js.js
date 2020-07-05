@@ -84,7 +84,7 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
 		if (diff>=0) {display.textContent = minutes + ":" + seconds;}
-		else if (diff==-1) {alert("Time's Up!")}
+		else if (diff==-1) {alert("Time's Up!");}
     };
 	if (single_start==0) {
 		single_start = 1;

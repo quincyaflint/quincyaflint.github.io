@@ -269,7 +269,7 @@ function timerFunction(action, duration, display) {
 		if (remaining_time <= 0) {clearInterval(BT);}
 	}
 	
-	
+
 	// BEGIN HERE!!!!
 	// INTITIATE THE TIMER
 	if ( play == -1 ) {
