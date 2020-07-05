@@ -68,7 +68,7 @@ function boggle_n(n){
 }
 
 
-
+single_start = 0;
 function startTimer(duration, display) {
     var start = Date.now(),
         diff,
@@ -83,9 +83,12 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds; 
-
+		if (diff>=0) {display.textContent = minutes + ":" + seconds;}
+		else if (diff==-1) {alert("Time's Up!")}
     };
-    timer();
-    setInterval(timer, 1000);
+	if (single_start==0) {
+		single_start = 1;
+		timer();
+		setInterval(timer, 1000);
+	}
 }
