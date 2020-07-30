@@ -239,6 +239,17 @@ f12 {
 }
 
 /* [AUTO] MULTIPLE COLUMNS OF TEXT */
+.auto-columns-one {
+	width: 100%;
+	column-count: 1;
+	column-gap: 0px;
+}
+
+.auto-columns-one ul {
+	padding-left: 60px;
+	color: #505050;
+}
+
 .auto-columns-two {
 	width: 100%;
 	column-count: 2;
